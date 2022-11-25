@@ -759,7 +759,9 @@
     }
     
     /* "Show more" button on live stream page */
-    #live-listings .show-more {
+    #live-listings .show-more,
+    form.menubar-search .search-autocomplete li.results-see-all a,
+    form.menubar-search .search-autocomplete li.results-see-all.key-nav a {
         color: #fff;
         background: #262626;
     }
@@ -767,5 +769,21 @@
     /* Fixed the bandcamp weekly player */
     .bcweekly-player > .col+.col {
         background: #303030;
+    }
+  
+    /* Menubar search dropdown */
+    form.menubar-search .search-autocomplete li.results-see-all a,
+    form.menubar-search .search-autocomplete li.results-see-all.key-nav a {
+        color: #fff;
+        background: #262626;
+    }
+    form.menubar-search .search-autocomplete li a,
+    #menubar form.menubar-search .search-autocomplete li:not(
+      .results-see-all.key-nav,
+      .results-genre.key-nav,
+      .results-tags.key-nav
+    ) a:focus,
+    .has-menubar.invertIconography #menubar.menubar-2018 #site-nav form.menubar-search .search-autocomplete li:not(.simple) a:focus {
+        background: #5c5c5c;
     }
 }
